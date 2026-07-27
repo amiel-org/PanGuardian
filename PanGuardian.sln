@@ -1,0 +1,51 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PanGuardian.App", "src\PanGuardian.App\PanGuardian.App.csproj", "{8E9A7E51-7F86-4A8D-9C56-66E0A36B9B41}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PanGuardian.Application", "src\PanGuardian.Application\PanGuardian.Application.csproj", "{7E67765B-2EDB-4EAB-9A36-8A64379A36B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PanGuardian.Domain", "src\PanGuardian.Domain\PanGuardian.Domain.csproj", "{6F608F5B-BF1A-44BD-85DE-9319A0A6D82A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PanGuardian.Infrastructure", "src\PanGuardian.Infrastructure\PanGuardian.Infrastructure.csproj", "{A9E4C32A-7D6C-4485-98CD-BCE8D7535125}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PanGuardian.Adapters", "src\PanGuardian.Adapters\PanGuardian.Adapters.csproj", "{B6D8757D-A2D2-4A60-A7EA-D2B42917A4E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PanGuardian.Contracts", "src\PanGuardian.Contracts\PanGuardian.Contracts.csproj", "{3E8DBA88-6D61-4A57-AB3A-9BB362F16155}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8E9A7E51-7F86-4A8D-9C56-66E0A36B9B41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E9A7E51-7F86-4A8D-9C56-66E0A36B9B41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E9A7E51-7F86-4A8D-9C56-66E0A36B9B41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E9A7E51-7F86-4A8D-9C56-66E0A36B9B41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E67765B-2EDB-4EAB-9A36-8A64379A36B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E67765B-2EDB-4EAB-9A36-8A64379A36B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E67765B-2EDB-4EAB-9A36-8A64379A36B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E67765B-2EDB-4EAB-9A36-8A64379A36B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F608F5B-BF1A-44BD-85DE-9319A0A6D82A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F608F5B-BF1A-44BD-85DE-9319A0A6D82A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F608F5B-BF1A-44BD-85DE-9319A0A6D82A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F608F5B-BF1A-44BD-85DE-9319A0A6D82A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9E4C32A-7D6C-4485-98CD-BCE8D7535125}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9E4C32A-7D6C-4485-98CD-BCE8D7535125}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9E4C32A-7D6C-4485-98CD-BCE8D7535125}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9E4C32A-7D6C-4485-98CD-BCE8D7535125}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6D8757D-A2D2-4A60-A7EA-D2B42917A4E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6D8757D-A2D2-4A60-A7EA-D2B42917A4E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6D8757D-A2D2-4A60-A7EA-D2B42917A4E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6D8757D-A2D2-4A60-A7EA-D2B42917A4E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E8DBA88-6D61-4A57-AB3A-9BB362F16155}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E8DBA88-6D61-4A57-AB3A-9BB362F16155}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E8DBA88-6D61-4A57-AB3A-9BB362F16155}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E8DBA88-6D61-4A57-AB3A-9BB362F16155}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

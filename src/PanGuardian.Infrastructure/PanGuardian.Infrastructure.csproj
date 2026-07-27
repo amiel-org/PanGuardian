@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <LangVersion>latest</LangVersion>
+    <AssemblyName>PanGuardian.Infrastructure</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PanGuardian.Application\PanGuardian.Application.csproj" />
+    <ProjectReference Include="..\PanGuardian.Domain\PanGuardian.Domain.csproj" />
+    <ProjectReference Include="..\PanGuardian.Contracts\PanGuardian.Contracts.csproj" />
+  </ItemGroup>
+</Project>

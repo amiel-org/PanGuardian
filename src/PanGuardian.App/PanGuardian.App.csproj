@@ -1,0 +1,62 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <LangVersion>latest</LangVersion>
+    <OutputType>WinExe</OutputType>
+    <UseWPF>true</UseWPF>
+    <AssemblyName>PanGuardian.App</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\disk-radar-hero.png" />
+    <Resource Include="Assets\disk-cockpit-hero.png" />
+    <Resource Include="Assets\fluent-disk-hero.png" />
+    <Resource Include="Assets\fluent-disk-hero-crop.png" />
+    <Resource Include="Assets\open-design-disk-cockpit-images-api.png" />
+    <Resource Include="Assets\open-design-disk-cockpit-hero-wide.png" />
+    <Resource Include="Assets\open-design-disk-cockpit-v2.png" />
+    <Resource Include="Assets\open-design-disk-cockpit-v2-hero-wide.png" />
+    <None Include="Assets\disk-radar-hero.prompt.md" />
+    <None Include="Assets\disk-cockpit-hero.prompt.md" />
+    <None Include="Assets\fluent-disk-hero.prompt.md" />
+    <None Include="Assets\open-design-disk-cockpit.prompt.md" />
+    <None Include="Assets\open-design-disk-cockpit-v2.prompt.md" />
+    <Compile Include="..\PanGuardian.Application\Orchestrators\DashboardOrchestrator.cs" Link="Application\Orchestrators\DashboardOrchestrator.cs" />
+    <Compile Include="..\PanGuardian.Application\Services\ByteSizeFormatter.cs" Link="Application\Services\ByteSizeFormatter.cs" />
+    <Compile Include="..\PanGuardian.Application\Services\CleanupService.cs" Link="Application\Services\CleanupService.cs" />
+    <Compile Include="..\PanGuardian.Application\Services\MockScannerService.cs" Link="Application\Services\MockScannerService.cs" />
+    <Compile Include="..\PanGuardian.Application\Services\WindowsScannerService.cs" Link="Application\Services\WindowsScannerService.cs" />
+    <Compile Include="..\PanGuardian.Application\Services\MigrationPlannerService.cs" Link="Application\Services\MigrationPlannerService.cs" />
+    <Compile Include="..\PanGuardian.Application\Services\MigrationExecutorService.cs" Link="Application\Services\MigrationExecutorService.cs" />
+    <Compile Include="..\PanGuardian.Application\Services\MigrationPrecheckService.cs" Link="Application\Services\MigrationPrecheckService.cs" />
+    <Compile Include="..\PanGuardian.Application\Services\MigrationRecordStore.cs" Link="Application\Services\MigrationRecordStore.cs" />
+    <Compile Include="..\PanGuardian.Application\Services\MigrationRollbackStore.cs" Link="Application\Services\MigrationRollbackStore.cs" />
+    <Compile Include="..\PanGuardian.Application\Services\MigrationRollbackExecutorService.cs" Link="Application\Services\MigrationRollbackExecutorService.cs" />
+    <Compile Include="..\PanGuardian.Application\Services\MigrationSwitchService.cs" Link="Application\Services\MigrationSwitchService.cs" />
+    <Compile Include="..\PanGuardian.Contracts\Dtos\ActionSuggestionDto.cs" Link="Contracts\Dtos\ActionSuggestionDto.cs" />
+    <Compile Include="..\PanGuardian.Contracts\Dtos\CleanupCandidateDto.cs" Link="Contracts\Dtos\CleanupCandidateDto.cs" />
+    <Compile Include="..\PanGuardian.Contracts\Dtos\DashboardSnapshotDto.cs" Link="Contracts\Dtos\DashboardSnapshotDto.cs" />
+    <Compile Include="..\PanGuardian.Contracts\Dtos\LargeFileDto.cs" Link="Contracts\Dtos\LargeFileDto.cs" />
+    <Compile Include="..\PanGuardian.Contracts\Dtos\MigrationCandidateDto.cs" Link="Contracts\Dtos\MigrationCandidateDto.cs" />
+    <Compile Include="..\PanGuardian.Contracts\Dtos\MigrationExecutionResultDto.cs" Link="Contracts\Dtos\MigrationExecutionResultDto.cs" />
+    <Compile Include="..\PanGuardian.Contracts\Dtos\MigrationPlanDto.cs" Link="Contracts\Dtos\MigrationPlanDto.cs" />
+    <Compile Include="..\PanGuardian.Contracts\Dtos\MigrationPrecheckResultDto.cs" Link="Contracts\Dtos\MigrationPrecheckResultDto.cs" />
+    <Compile Include="..\PanGuardian.Contracts\Dtos\MigrationRecordEntry.cs" Link="Contracts\Dtos\MigrationRecordEntry.cs" />
+    <Compile Include="..\PanGuardian.Contracts\Dtos\MigrationRollbackPointDto.cs" Link="Contracts\Dtos\MigrationRollbackPointDto.cs" />
+    <Compile Include="..\PanGuardian.Contracts\Dtos\MigrationRollbackResultDto.cs" Link="Contracts\Dtos\MigrationRollbackResultDto.cs" />
+    <Compile Include="..\PanGuardian.Contracts\Dtos\MigrationSwitchResultDto.cs" Link="Contracts\Dtos\MigrationSwitchResultDto.cs" />
+    <Compile Include="..\PanGuardian.Contracts\Dtos\SourceDetailDto.cs" Link="Contracts\Dtos\SourceDetailDto.cs" />
+    <Compile Include="..\PanGuardian.Contracts\Dtos\SourceUsageDto.cs" Link="Contracts\Dtos\SourceUsageDto.cs" />
+    <Compile Include="..\PanGuardian.Domain\Interfaces\IMigrationExecutor.cs" Link="Domain\Interfaces\IMigrationExecutor.cs" />
+    <Compile Include="..\PanGuardian.Domain\Interfaces\IMigrationPlanner.cs" Link="Domain\Interfaces\IMigrationPlanner.cs" />
+    <Compile Include="..\PanGuardian.Domain\Interfaces\IMigrationPrechecker.cs" Link="Domain\Interfaces\IMigrationPrechecker.cs" />
+    <Compile Include="..\PanGuardian.Domain\Interfaces\IMigrationRecordStore.cs" Link="Domain\Interfaces\IMigrationRecordStore.cs" />
+    <Compile Include="..\PanGuardian.Domain\Interfaces\IMigrationRollbackExecutor.cs" Link="Domain\Interfaces\IMigrationRollbackExecutor.cs" />
+    <Compile Include="..\PanGuardian.Domain\Interfaces\IMigrationRollbackStore.cs" Link="Domain\Interfaces\IMigrationRollbackStore.cs" />
+    <Compile Include="..\PanGuardian.Domain\Interfaces\IMigrationSwitcher.cs" Link="Domain\Interfaces\IMigrationSwitcher.cs" />
+    <Compile Include="..\PanGuardian.Domain\Interfaces\IScannerService.cs" Link="Domain\Interfaces\IScannerService.cs" />
+    <Compile Include="..\PanGuardian.Domain\Interfaces\IStorageFormatter.cs" Link="Domain\Interfaces\IStorageFormatter.cs" />
+  </ItemGroup>
+</Project>
